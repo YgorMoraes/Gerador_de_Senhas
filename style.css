@@ -97,6 +97,11 @@ header h3:hover{
   color: #FFF;
   font-weight: bold;
   font-size: 1.2rem;
+  transition: .4s ease;
+}
+
+.button-cta:hover{
+  transform: scale(1.02);
 }
 
 .container-password{
