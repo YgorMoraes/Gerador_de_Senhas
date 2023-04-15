@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/icons8-janela-de-senha-48.png" type="image/x-icon">
-  <meta name="keywords" content="Gerador de Senhas, Gerador Password">
-  <link rel="stylesheet" href="style.css">
-  <title>Gerador de Senhas</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="keywords" content="Gerador de Senhas, Gerador Password" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerador de Senhas</title>
+  </head>
 
-<!-- --------------------------------------- -->
-<body>
+  <!-- --------------------------------------- -->
+  <body>
+    <header>
+      <a href="index.html"><img src="assets/favicon.png" alt="Logo gerador de senhas"/></a>
+    </header>
 
-  <img class="logo" src="assets/logo.png" alt="Logo Gerador de Senhas">
+    <div class="container">
+      <h1>Gerador de Senhas Aleatórias</h1>
+      <p>Gere senhas seguras, aleatórias e exclusivas com um só clique.</p>
 
-  <main class="container-input">
-    <span>Tamanho <span id="valor"></span> Caracteres</span>
-    <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+      <div class="container-input">
+        <span>Tamanho: <span id="valor"></span> Caracteres</span>
+        <input
+          id="slider"
+          class="slider"
+          type="range"
+          min="5"
+          max="100"
+          value="5"
+        />
+        <button onclick="generatePassword()" id="button" class="button-cta">
+          Gerar Senha
+        </button>
+      </div>
 
-    <button onclick="generatePassword()" id="button" class="button-cta">Gerar Senha</button>
-  </main>
-
-    <div onclick="copyPassword()" id="container-password" class="container-password hide">
-      <span class="title">Sua senha gerada foi:</span>
-      <span id="password" class="password"></span>
-      <span class="tooltip">Clique na senha para copiar. ☝️</span>
+      <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span onclick="copyPassword()" id="password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar☝️</span>
+      </div>
     </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
