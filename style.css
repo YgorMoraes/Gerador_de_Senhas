@@ -9,95 +9,123 @@
 }
 
 body{
-  background-color: #18181B;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: url(assets/bg.png) top 7rem center no-repeat #f6f7f7;;
+  background-size: 100%;
 }
 
-.logo{
-  max-width: 500px;
-  margin-bottom: 24px;
+header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: .2rem 9%;
+  background-color: #012638;
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
+}
+
+header img{
+  width: 3.5rem;
+}
+
+.container{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 9%;
+  margin-top: .5rem;
+}
+
+.container h1{
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.container p{
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: .5rem;
 }
 
 .container-input{
   max-width: 450px;
-  margin: 14px 0;
+  margin: .5rem 0 0;
   text-align: center;
 }
 
 .container-input span{
-  color: #FFF;
-  font-size: 22px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-
 
 .slider{
   appearance: none;
   width: 100%;
-  border-radius: 5px;
-  background: #DFDFDF;
-  height: 18px;
-  outline: none;
-  margin-top: 8px;
+  border-radius: .5rem;
+  background-color: #242424;
+  height: 1.1rem;
+  margin-top: .4rem;
+  margin-bottom: 1.2rem;
 }
 
 .button-cta{
-  height: 40px;
-  background-color: #3EB72B;
-  border: 0;
-  border-radius: 4px;
+  background-color: #23be76;
+  border: none;
+  padding: .8rem 2rem;
+  border-radius: .8rem;
   cursor: pointer;
-  margin-top: 40px;
   color: #FFF;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .container-password{
-  max-width: 450px;
-  margin: 14px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .title{
   text-align: center;
-  color: #FFF;
-  font-size: 28px;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: .6rem;
 }
 
 .password{
-  height: 60px;
-  background-color: rgba(0,0,0,0.40);
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: .5rem .6rem;
+  background-color: #242424f6;
+  border-radius: .8rem;
   color: #FFF;
-  border: 1px solid #313131;
-  transition: transform 0.5s;
+  transition: 0.5s ease;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 51rem;
+  cursor: pointer;
+  word-break: break-word;
 }
 
 .password:hover{
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .tooltip{
   color: #FFF;
   position: relative;
-  top: 20px;
-  padding: 6px 8px;
+  top: 1rem;
+  padding: .3rem .3rem;
   background: rgb(15, 15, 15);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -107,8 +135,90 @@ body{
   display: none;
 }
 
-.container-password:hover .tooltip{
+.password:hover + .tooltip{
   visibility: visible;
-  bottom: 50px;
   opacity: 1;
 }
+
+/* ------------------BREAKPOINTS--------------- */
+
+@media (max-width:615px){   
+  body{
+    background: top 7rem center no-repeat #f6f7f7;;
+  }
+
+    .container h1{
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .container p{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width:465px){   
+    .container h1{
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .container p{
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .container-input span{
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width:365px){   
+    .container h1{
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .container p{
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .container-input span{
+      font-size: 1rem;
+    }
+
+
+    .button-cta{
+      padding: .8rem 1.3rem;
+      font-size: 1rem;
+    }
+    
+    .title{
+      font-size: 1rem;
+      margin-bottom: .6rem;
+    }
+    
+    .password{
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width:313px){   
+    html{
+      font-size: 95%;
+      }
+    }
+
+    @media (max-width:297px){   
+      html{
+        font-size: 90%;
+      }
+    }
+
+    @media (max-width:222px){   
+      html{
+        font-size: 85%;
+      }
+    }
