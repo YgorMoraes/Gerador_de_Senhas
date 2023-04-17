@@ -10,7 +10,7 @@
 
 <br>
 
-![Resultado final do projeto](https://raw.githubusercontent.com/YgorMoraes/Gerador_de_Senhas/assets/Gerador_de_Senhas.png)
+![Resultado final do projeto](https://raw.githubusercontent.com/YgorMoraes/Gerador_de_Senhas/master/assets/Gerador_de_Senhas.png)
 
 <br>
 
