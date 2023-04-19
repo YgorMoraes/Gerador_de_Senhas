@@ -46,6 +46,7 @@ header h3:hover{
 
 .container{
   height: 90vh;
+  /* height: calc(90vh - 67.38px); */
   display: flex;
   flex-direction: column;
   justify-content: center;
