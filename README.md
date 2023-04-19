@@ -16,7 +16,7 @@
 
 ## 📝 Descrição 
 
-O gerador de senhas aleatórias tem como objetivo criar senhas seguras e difíceis de serem adivinhadas por terceiros, aumentando a segurança das contas e dados pessoais dos usuários. 
+O gerador de senhas aleatórias tem como objetivo criar senhas seguras e difíceis de serem descobertas por terceiros, aumentando a segurança das contas e dados pessoais dos usuários. 
 
 - Website: [ygormoraes.github.io/Gerador_de_Senhas](https://ygormoraes.github.io/Gerador_de_Senhas/)
 
