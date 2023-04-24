@@ -35,14 +35,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🔗 Links
 
 <p align="left">
+ 
+ <a href="https://www.linkedin.com/in/ygormoraes/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  <a href="https://ygormoraes.vercel.app" target="_blank"><img src="https://img.shields.io/badge/meu_portfolio-rgb(25, 27, 30)?style=for-the-badge&logo=ko-fi&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/ygor_moraes/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href = "mailto:ygorluizmoraes@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 
- <a href="https://www.linkedin.com/in/ygormoraes/" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-000?style=for-the-badge&logo=Linkedin&logoColor=0A66C2&link=https://www.linkedin.com/in/ygormoraes/"/> 
- </a>
-
- <a href="https://www.instagram.com/ygor_moraes/" alt="Instagram">
-  <img src="https://img.shields.io/badge/-Instagram-000?style=for-the-badge&logo=Instagram&logoColor=000dff&link=https://www.instagram.com/ygor_moraes/"/> 
- </a>
 
  </p>
 
